@@ -13,7 +13,7 @@ DOCREL='http://schemas.openxmlformats.org/officeDocument/2006/relationships'
 ET.register_namespace('',NS)
 ET.register_namespace('r',DOCREL)
 
-def patch_links(workbook,links):
+def patch_links(workbook,links,hide_original=False):
     workbook=Path(workbook).resolve()
     with zipfile.ZipFile(workbook) as z:
         contents={i.filename:z.read(i.filename) for i in z.infolist()}
@@ -37,6 +37,7 @@ def patch_links(workbook,links):
         used={e.attrib['Id'] for e in relxml}
         for n,l in enumerate((l for l in links if l['sheet']==sheet),1):
             attrs={'ref':l['cell'],'display':l['label']}
+            if l.get('tooltip'):attrs['tooltip']=l['tooltip']
             if l['target'].startswith('#'):
                 attrs['location']=l['target'][1:]
             else:
@@ -45,6 +46,11 @@ def patch_links(workbook,links):
                 used.add(rid);attrs[f'{{{DOCREL}}}id']=rid
                 ET.SubElement(relxml,f'{{{REL}}}Relationship',{'Id':rid,'Type':DOCREL+'/hyperlink','Target':l['target'],'TargetMode':'External'})
             ET.SubElement(hyperlinks,f'{{{NS}}}hyperlink',attrs)
+        if hide_original:
+            cols=xml.find(f'{{{NS}}}cols')
+            if cols is not None:
+                for col in cols:
+                    if int(col.attrib['min'])>=6 and int(col.attrib['max'])<=7:col.set('hidden','1')
         contents[part]=ET.tostring(xml,encoding='utf-8',xml_declaration=True)
         contents[relpart]=ET.tostring(relxml,encoding='utf-8',xml_declaration=True)
     temporary=workbook.with_suffix('.links-patched.xlsx')
@@ -54,4 +60,4 @@ def patch_links(workbook,links):
     print(f'Added {len(links)} native hyperlinks.')
 
 if __name__=='__main__':
-    patch_links(sys.argv[1],json.loads(Path(sys.argv[2]).read_text(encoding='utf-8')))
+    patch_links(sys.argv[1],json.loads(Path(sys.argv[2]).read_text(encoding='utf-8')),len(sys.argv)>3)
