@@ -50,7 +50,8 @@ def patch_links(workbook,links,hide_original=False):
             cols=xml.find(f'{{{NS}}}cols')
             if cols is not None:
                 for col in cols:
-                    if int(col.attrib['min'])>=6 and int(col.attrib['max'])<=7:col.set('hidden','1')
+                    first=7 if hide_original=='two-tags' else 6
+                    if int(col.attrib['min'])>=first and int(col.attrib['max'])<=first+1:col.set('hidden','1')
         contents[part]=ET.tostring(xml,encoding='utf-8',xml_declaration=True)
         contents[relpart]=ET.tostring(relxml,encoding='utf-8',xml_declaration=True)
     temporary=workbook.with_suffix('.links-patched.xlsx')
@@ -60,4 +61,4 @@ def patch_links(workbook,links,hide_original=False):
     print(f'Added {len(links)} native hyperlinks.')
 
 if __name__=='__main__':
-    patch_links(sys.argv[1],json.loads(Path(sys.argv[2]).read_text(encoding='utf-8')),len(sys.argv)>3)
+    patch_links(sys.argv[1],json.loads(Path(sys.argv[2]).read_text(encoding='utf-8')),sys.argv[3] if len(sys.argv)>3 else False)
