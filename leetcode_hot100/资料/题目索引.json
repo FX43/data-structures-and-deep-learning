@@ -1881,6 +1881,41 @@
       ]
     },
     {
+      "id": 994,
+      "title": "腐烂的橘子",
+      "difficulty": "中等",
+      "slug": "rotting-oranges",
+      "url": "https://leetcode.cn/problems/rotting-oranges/",
+      "category": "图论",
+      "subtopic": "多源 BFS",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官网题单分组",
+      "tags": "广度优先搜索 / 数组 / 矩阵",
+      "notebook": "09_图论.ipynb",
+      "anchor": "lc-994",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "多源 BFS：先扫描整个网格，将所有腐烂橘子入队并统计新鲜橘子 num；每层处理当前队列长度，对应 1 分钟。新鲜橘子入队时立即标记为腐烂并将 num 减一，避免重复入队。",
+      "extra": "【曾错重点】首次完整遍历网格后、进入 while queue 前，先判断 num == 0（即 if not num），为 0 立即 return 0！不能只在 BFS 内判断：如 [[0]] 没有新鲜橘子，队列也为空，BFS 不执行，会误走末尾 return -1。",
+      "blocks": [
+        {
+          "file": "09_图论.ipynb",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "sort": [
+        8,
+        1,
+        0,
+        994
+      ],
+      "local_number": 2
+    },
+    {
       "id": 207,
       "title": "课程表",
       "difficulty": "中等",

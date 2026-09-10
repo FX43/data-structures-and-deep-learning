@@ -37,7 +37,7 @@ s.getRange('A2').values=[['A列大标签采用Hot100官网分类，B列小标签
 s.getRange('A2:M2').format.rowHeight=46;
 s.getRange('A3:M3').values=[['大标签','小标签',...input.headers.slice(1)]];s.getRange('A3:M3').format=input.header_style;
 s.getRange('A3:M3').format.rowHeight=48;
-s.freezePanes.freezeRows(3);s.freezePanes.freezeColumns(2);
+s.freezePanes.freezeRows(input.freeze_rows??3);s.freezePanes.freezeColumns(input.freeze_columns??2);
 const links=[];const groupRanges=[];let groupStart=4,previousGroup='';
 const majorRanges=[];let majorStart=4,previousMajor='';
 function textUnits(value){return String(value??'').split('\n').map(line=>[...line].reduce((n,c)=>n+(c.charCodeAt(0)>255?2:1),0));}
@@ -114,7 +114,7 @@ if(process.env.CODEX_PREVIEW_DIR){
 const temp=path.join(root,'.tracking.pending.xlsx');
 await (await SpreadsheetFile.exportXlsx(w)).save(temp);
 const linkfile=path.join(root,'.tracking.links.json');await fs.writeFile(linkfile,JSON.stringify(links));
-const patch=spawnSync(process.env.CODEX_PYTHON||'python',[path.join(root,'tools/xlsx_links.py'),temp,linkfile,'two-tags'],{stdio:'inherit'});
+const patch=spawnSync(process.env.CODEX_PYTHON||'python',[path.join(root,'tools/xlsx_links.py'),temp,linkfile,...(input.hide_original_columns===false?[]:['two-tags'])],{stdio:'inherit'});
 if(patch.status!==0)throw new Error('Excel链接处理失败，原文件未替换。');
 await fs.rename(temp,path.join(root,filename));await fs.unlink(linkfile);
 console.log(`Saved original-format tracker with ${records.length} problems.`);
