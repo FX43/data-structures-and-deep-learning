@@ -7596,7 +7596,7 @@
         }
       ],
       "original_row": 96,
-      "height": 36.0,
+      "height": 45.8,
       "notebook": "06_矩阵.ipynb",
       "anchor": "lc-73",
       "url": "https://leetcode.cn/problems/set-matrix-zeroes/"
@@ -18002,6 +18002,806 @@
       "url": "https://leetcode.cn/problems/validate-binary-search-tree/"
     },
     {
+      "id": 108,
+      "group": [
+        "二叉树",
+        "二叉搜索树"
+      ],
+      "values": [
+        "二叉树\n二叉搜索树",
+        1,
+        108,
+        "108.将有序数组转换为二叉搜索树",
+        "简单",
+        null,
+        null,
+        "leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/",
+        "×",
+        null,
+        "二叉搜索树按照中序遍历是严格递增的,基本结束条件为 left > right,然后就是不断迭代mid,构建节点",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1E7B34"
+          },
+          "fill": "#E2EFDA",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 60,
+      "notebook": "08_二叉树.ipynb",
+      "anchor": "lc-108",
+      "url": "https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/"
+    },
+    {
+      "id": 230,
+      "group": [
+        "二叉树",
+        "二叉搜索树"
+      ],
+      "values": [
+        "二叉树\n二叉搜索树",
+        1,
+        230,
+        "230. 二叉搜索树中第 K 小的元素",
+        "中等",
+        null,
+        null,
+        "leetcode.cn/problems/kth-smallest-element-in-a-bst/",
+        "×",
+        null,
+        "k:需要跳过多少个节点,才能找到目标节点",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#B45F06"
+          },
+          "fill": "#FFF2CC",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 60,
+      "notebook": "08_二叉树.ipynb",
+      "anchor": "lc-230",
+      "url": "https://leetcode.cn/problems/kth-smallest-element-in-a-bst/"
+    },
+    {
       "id": 114,
       "group": [
         "二叉树",
@@ -21845,8 +22645,7 @@
             "size": 9.0,
             "bold": false,
             "italic": false,
-            "color": "#0563C1",
-            "underline": "single"
+            "color": "#0563C1"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -21905,10 +22704,10 @@
         {
           "font": {
             "name": "微软雅黑",
-            "size": 12.0,
-            "bold": false,
+            "size": 11.0,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#1F4E79"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -21997,7 +22796,7 @@
         }
       ],
       "original_row": null,
-      "height": 140,
+      "height": 140.0,
       "notebook": "09_图论.ipynb",
       "anchor": "lc-994",
       "url": "https://leetcode.cn/problems/rotting-oranges/"
@@ -22397,7 +23196,7 @@
         }
       ],
       "original_row": 91,
-      "height": 78.0,
+      "height": 83.6,
       "notebook": "09_图论.ipynb",
       "anchor": "lc-207",
       "url": "https://leetcode.cn/problems/course-schedule/"
@@ -22797,7 +23596,7 @@
         }
       ],
       "original_row": 92,
-      "height": 36.0,
+      "height": 45.8,
       "notebook": "09_图论.ipynb",
       "anchor": "lc-208",
       "url": "https://leetcode.cn/problems/implement-trie-prefix-tree/"
@@ -23137,9 +23936,9 @@
           "font": {
             "name": "微软雅黑",
             "size": 9.0,
-            "bold": false,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#FF0000"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -23537,9 +24336,9 @@
           "font": {
             "name": "微软雅黑",
             "size": 9.0,
-            "bold": false,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#FF0000"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -23937,9 +24736,9 @@
           "font": {
             "name": "微软雅黑",
             "size": 9.0,
-            "bold": false,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#FF0000"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -24337,9 +25136,9 @@
           "font": {
             "name": "微软雅黑",
             "size": 9.0,
-            "bold": false,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#FF0000"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -24737,9 +25536,9 @@
           "font": {
             "name": "微软雅黑",
             "size": 9.0,
-            "bold": false,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#FF0000"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -25137,9 +25936,9 @@
           "font": {
             "name": "微软雅黑",
             "size": 9.0,
-            "bold": false,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#FF0000"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -25201,6 +26000,406 @@
       "notebook": "10_回溯.ipynb",
       "anchor": "lc-22",
       "url": "https://leetcode.cn/problems/generate-parentheses/"
+    },
+    {
+      "id": 79,
+      "group": [
+        "回溯",
+        "网格搜索"
+      ],
+      "values": [
+        "回溯\n网格搜索",
+        1,
+        79,
+        "79. 单词搜索",
+        "中等",
+        null,
+        null,
+        "leetcode.cn/problems/word-search/",
+        null,
+        null,
+        "网格回溯：从每个格子出发匹配 word[k:]，当前字符匹配后标记访问，枚举四邻格递归匹配 k+1；失败后恢复现场，同一路径不能重复使用格子。先比较字符频次剪枝，必要时反转单词，从较稀少的端点开始搜索。",
+        "注意区分下标：子集/组合正序且不可重复选时，选 j 后递归从 j+1 开始；单词搜索推进的是字符下标 k+1，同时移动到相邻未访问格子。"
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#B45F06"
+          },
+          "fill": "#FFF2CC",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 105,
+      "notebook": "10_回溯.ipynb",
+      "anchor": "lc-79",
+      "url": "https://leetcode.cn/problems/word-search/"
     },
     {
       "id": 131,
@@ -25537,9 +26736,9 @@
           "font": {
             "name": "微软雅黑",
             "size": 9.0,
-            "bold": false,
+            "bold": true,
             "italic": false,
-            "color": "#000000"
+            "color": "#FF0000"
           },
           "fill": "#FFFFFF",
           "verticalAlignment": "center",
@@ -28803,6 +30002,406 @@
       "url": "https://leetcode.cn/problems/min-stack/"
     },
     {
+      "id": 20,
+      "group": [
+        "栈",
+        "括号匹配"
+      ],
+      "values": [
+        "栈\n括号匹配",
+        1,
+        20,
+        "20.有效括号",
+        "简单",
+        null,
+        null,
+        "leetcode.cn/problems/valid-parentheses/",
+        "×",
+        null,
+        "使用stack保存各种左括号,当遇到一个右括号的时候,如果stack为空或者说stack.pop()与右括号不匹配的话,那么返回False,请注意判断条件里面的stack.pop(),遇到一个右括号,无论能不能匹配,都要弹出",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1E7B34"
+          },
+          "fill": "#E2EFDA",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 60,
+      "notebook": "12_栈.ipynb",
+      "anchor": "lc-20",
+      "url": "https://leetcode.cn/problems/valid-parentheses/"
+    },
+    {
       "id": 394,
       "group": [
         "栈",
@@ -30401,6 +32000,406 @@
       "notebook": "13_堆.ipynb",
       "anchor": "lc-215",
       "url": "https://leetcode.cn/problems/kth-largest-element-in-an-array/"
+    },
+    {
+      "id": 347,
+      "group": [
+        "堆",
+        "Top K 高频"
+      ],
+      "values": [
+        "堆\nTop K 高频",
+        1,
+        347,
+        "347.前k个高频元素",
+        "中等",
+        null,
+        null,
+        "leetcode.cn/problems/top-k-frequent-elements/",
+        null,
+        null,
+        "先用哈希表统计每个元素的出现频次，再用小顶堆维护频次最高的 K 个元素；也可按频次分桶。",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#B45F06"
+          },
+          "fill": "#FFF2CC",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 60,
+      "notebook": "13_堆.ipynb",
+      "anchor": "lc-347",
+      "url": "https://leetcode.cn/problems/top-k-frequent-elements/"
     },
     {
       "id": 295,
@@ -33603,6 +35602,406 @@
       "url": "https://leetcode.cn/problems/house-robber/"
     },
     {
+      "id": 213,
+      "group": [
+        "动态规划",
+        "打家劫舍题组"
+      ],
+      "values": [
+        "动态规划\n打家劫舍题组",
+        1,
+        213,
+        "213. 打家劫舍 II",
+        "中等",
+        null,
+        null,
+        "leetcode.cn/problems/house-robber-ii/",
+        null,
+        null,
+        "房屋首尾相邻，分别计算不选最后一间和不选第一间的线性打家劫舍结果，取两者最大值。",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#B45F06"
+          },
+          "fill": "#FFF2CC",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 78.0,
+      "notebook": "15_动态规划.ipynb",
+      "anchor": "lc-213",
+      "url": "https://leetcode.cn/problems/house-robber-ii/"
+    },
+    {
       "id": 322,
       "group": [
         "动态规划",
@@ -34001,6 +36400,406 @@
       "notebook": "15_动态规划.ipynb",
       "anchor": "lc-322",
       "url": "https://leetcode.cn/problems/coin-change/"
+    },
+    {
+      "id": 416,
+      "group": [
+        "动态规划",
+        "0-1 背包"
+      ],
+      "values": [
+        "动态规划\n0-1 背包",
+        1,
+        416,
+        "416.分割等和子集",
+        "中等",
+        null,
+        null,
+        "leetcode.cn/problems/partition-equal-subset-sum/",
+        null,
+        null,
+        "0,1背包问题,内部循环要倒序遍历,与零钱兑换以及完全平方和数不同",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#B45F06"
+          },
+          "fill": "#FFF2CC",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 60,
+      "notebook": "15_动态规划.ipynb",
+      "anchor": "lc-416",
+      "url": "https://leetcode.cn/problems/partition-equal-subset-sum/"
     },
     {
       "id": 494,
@@ -37603,6 +40402,806 @@
       "url": "https://leetcode.cn/problems/maximum-score-from-performing-multiplication-operations/"
     },
     {
+      "id": 62,
+      "group": [
+        "多维动态规划",
+        "网格路径"
+      ],
+      "values": [
+        "多维动态规划\n网格路径",
+        1,
+        62,
+        "62. 不同路径",
+        "中等",
+        null,
+        null,
+        "leetcode.cn/problems/unique-paths/",
+        null,
+        null,
+        "网格动态规划：到达 (i,j) 的路径数等于从上方和左方到达的路径数之和；首行和首列初始化为 1。",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#C00000"
+          },
+          "fill": "#F4CCCC",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 78.0,
+      "notebook": "16_多维动态规划.ipynb",
+      "anchor": "lc-62",
+      "url": "https://leetcode.cn/problems/unique-paths/"
+    },
+    {
+      "id": 64,
+      "group": [
+        "多维动态规划",
+        "网格路径"
+      ],
+      "values": [
+        "多维动态规划\n网格路径",
+        1,
+        64,
+        "64.最小路径和",
+        "中等",
+        null,
+        null,
+        "leetcode.cn/problems/minimum-path-sum/",
+        null,
+        null,
+        "注意f[0]的处理:f[0] += grid[i][0],同时内部循环从1开始.使用一维数组便可以解决问题",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#C00000"
+          },
+          "fill": "#F4CCCC",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 78.0,
+      "notebook": "16_多维动态规划.ipynb",
+      "anchor": "lc-64",
+      "url": "https://leetcode.cn/problems/minimum-path-sum/"
+    },
+    {
       "id": 5,
       "group": [
         "多维动态规划",
@@ -40803,6 +44402,406 @@
       "url": "https://leetcode.cn/problems/sort-colors/"
     },
     {
+      "id": 136,
+      "group": [
+        "技巧",
+        "位运算"
+      ],
+      "values": [
+        "技巧\n位运算",
+        1,
+        136,
+        "136. 只出现一次的数字",
+        "简单",
+        null,
+        null,
+        "leetcode.cn/problems/single-number/",
+        null,
+        null,
+        "异或思路:python当中的异或操作按位计算",
+        null
+      ],
+      "styles": [
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#DDEBF7",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": false,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 10.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1E7B34"
+          },
+          "fill": "#E2EFDA",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "宋体",
+            "size": 11.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#F2F2F2",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#0563C1"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 12.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 11.0,
+            "bold": true,
+            "italic": false,
+            "color": "#1F4E79"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "center",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        },
+        {
+          "font": {
+            "name": "微软雅黑",
+            "size": 9.0,
+            "bold": false,
+            "italic": false,
+            "color": "#000000"
+          },
+          "fill": "#FFFFFF",
+          "verticalAlignment": "center",
+          "horizontalAlignment": "left",
+          "wrapText": true,
+          "borders": {
+            "top": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "bottom": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "left": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            },
+            "right": {
+              "style": "thin",
+              "color": "#B0B0B0"
+            }
+          }
+        }
+      ],
+      "original_row": null,
+      "height": 60,
+      "notebook": "17_技巧.ipynb",
+      "anchor": "lc-136",
+      "url": "https://leetcode.cn/problems/single-number/"
+    },
+    {
       "id": 31,
       "group": [
         "技巧",
@@ -41688,7 +45687,7 @@
     60,
     40
   ],
-  "freeze_rows": 56,
-  "freeze_columns": 5,
-  "hide_original_columns": false
+  "freeze_rows": 3,
+  "freeze_columns": 2,
+  "hide_original_columns": true
 }

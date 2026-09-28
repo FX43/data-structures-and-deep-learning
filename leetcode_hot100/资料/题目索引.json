@@ -1253,6 +1253,74 @@
       ]
     },
     {
+      "id": 108,
+      "title": "将有序数组转换为二叉搜索树",
+      "difficulty": "简单",
+      "slug": "convert-sorted-array-to-binary-search-tree",
+      "url": "https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/",
+      "category": "二叉树",
+      "subtopic": "二叉搜索树",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "二叉树 / 二叉搜索树",
+      "notebook": "08_二叉树.ipynb",
+      "anchor": "lc-108",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "二叉搜索树按照中序遍历是严格递增的,基本结束条件为 left > right,然后就是不断迭代mid,构建节点",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "08_二叉树.ipynb",
+          "start": 38,
+          "end": 41
+        }
+      ],
+      "sort": [
+        7,
+        0,
+        0,
+        108
+      ]
+    },
+    {
+      "id": 230,
+      "title": "二叉搜索树中第 K 小的元素",
+      "difficulty": "中等",
+      "slug": "kth-smallest-element-in-a-bst",
+      "url": "https://leetcode.cn/problems/kth-smallest-element-in-a-bst/",
+      "category": "二叉树",
+      "subtopic": "二叉搜索树",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "二叉树 / 二叉搜索树",
+      "notebook": "08_二叉树.ipynb",
+      "anchor": "lc-230",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "k:需要跳过多少个节点,才能找到目标节点",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "08_二叉树.ipynb",
+          "start": 41,
+          "end": 44
+        }
+      ],
+      "sort": [
+        7,
+        0,
+        0,
+        230
+      ]
+    },
+    {
       "id": 104,
       "title": "二叉树的最大深度",
       "difficulty": "简单",
@@ -2190,6 +2258,41 @@
       ]
     },
     {
+      "id": 79,
+      "title": "单词搜索",
+      "difficulty": "中等",
+      "slug": "word-search",
+      "url": "https://leetcode.cn/problems/word-search/",
+      "category": "回溯",
+      "subtopic": "网格搜索",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官网题单分组",
+      "tags": "数组 / 字符串 / 回溯 / 矩阵",
+      "notebook": "10_回溯.ipynb",
+      "anchor": "lc-79",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "网格回溯：从每个格子出发匹配 word[k:]，当前字符匹配后标记访问，枚举四邻格递归匹配 k+1；失败后恢复现场，同一路径不能重复使用格子。先比较字符频次剪枝，必要时反转单词，从较稀少的端点开始搜索。",
+      "extra": "注意区分下标：子集/组合正序且不可重复选时，选 j 后递归从 j+1 开始；单词搜索推进的是字符下标 k+1，同时移动到相邻未访问格子。",
+      "blocks": [
+        {
+          "file": "10_回溯.ipynb",
+          "start": 31,
+          "end": 33
+        }
+      ],
+      "sort": [
+        9,
+        5,
+        0,
+        79
+      ],
+      "local_number": 9
+    },
+    {
       "id": 131,
       "title": "分割回文串",
       "difficulty": "中等",
@@ -2459,6 +2562,40 @@
       ]
     },
     {
+      "id": 20,
+      "title": "有效的括号",
+      "difficulty": "简单",
+      "slug": "valid-parentheses",
+      "url": "https://leetcode.cn/problems/valid-parentheses/",
+      "category": "栈",
+      "subtopic": "括号匹配",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "栈 / 括号匹配",
+      "notebook": "12_栈.ipynb",
+      "anchor": "lc-20",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "使用stack保存各种左括号,当遇到一个右括号的时候,如果stack为空或者说stack.pop()与右括号不匹配的话,那么返回False,请注意判断条件里面的stack.pop(),遇到一个右括号,无论能不能匹配,都要弹出",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "12_栈.ipynb",
+          "start": 7,
+          "end": 10
+        }
+      ],
+      "sort": [
+        11,
+        0,
+        0,
+        20
+      ]
+    },
+    {
       "id": 155,
       "title": "最小栈",
       "difficulty": "中等",
@@ -2626,6 +2763,40 @@
         0,
         0,
         215
+      ]
+    },
+    {
+      "id": 347,
+      "title": "前 K 个高频元素",
+      "difficulty": "中等",
+      "slug": "top-k-frequent-elements",
+      "url": "https://leetcode.cn/problems/top-k-frequent-elements/",
+      "category": "堆",
+      "subtopic": "Top K 高频",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "堆 / Top K 高频",
+      "notebook": "13_堆.ipynb",
+      "anchor": "lc-347",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "先用哈希表统计每个元素的出现频次，再用小顶堆维护频次最高的 K 个元素；也可按频次分桶。",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "13_堆.ipynb",
+          "start": 1,
+          "end": 4
+        }
+      ],
+      "sort": [
+        12,
+        0,
+        0,
+        347
       ]
     },
     {
@@ -2836,6 +3007,76 @@
         2,
         0,
         45
+      ]
+    },
+    {
+      "id": 213,
+      "title": "打家劫舍 II",
+      "difficulty": "中等",
+      "slug": "house-robber-ii",
+      "url": "https://leetcode.cn/problems/house-robber-ii/",
+      "category": "动态规划",
+      "subtopic": "打家劫舍题组",
+      "scope": "扩展题",
+      "related": [
+        198
+      ],
+      "reason": "同类题型扩展",
+      "tags": "动态规划 / 打家劫舍题组",
+      "notebook": "15_动态规划.ipynb",
+      "anchor": "lc-213",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "房屋首尾相邻，分别计算不选最后一间和不选第一间的线性打家劫舍结果，取两者最大值。",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "15_动态规划.ipynb",
+          "start": 10,
+          "end": 12
+        }
+      ],
+      "sort": [
+        14,
+        0,
+        0,
+        213
+      ]
+    },
+    {
+      "id": 416,
+      "title": "分割等和子集",
+      "difficulty": "中等",
+      "slug": "partition-equal-subset-sum",
+      "url": "https://leetcode.cn/problems/partition-equal-subset-sum/",
+      "category": "动态规划",
+      "subtopic": "0-1 背包",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "动态规划 / 0-1 背包",
+      "notebook": "15_动态规划.ipynb",
+      "anchor": "lc-416",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "0,1背包问题,内部循环要倒序遍历,与零钱兑换以及完全平方和数不同",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "15_动态规划.ipynb",
+          "start": 25,
+          "end": 31
+        }
+      ],
+      "sort": [
+        14,
+        0,
+        0,
+        416
       ]
     },
     {
@@ -3224,6 +3465,74 @@
       ]
     },
     {
+      "id": 62,
+      "title": "不同路径",
+      "difficulty": "中等",
+      "slug": "unique-paths",
+      "url": "https://leetcode.cn/problems/unique-paths/",
+      "category": "多维动态规划",
+      "subtopic": "网格路径",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "多维动态规划 / 网格路径",
+      "notebook": "16_多维动态规划.ipynb",
+      "anchor": "lc-62",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "网格动态规划：到达 (i,j) 的路径数等于从上方和左方到达的路径数之和；首行和首列初始化为 1。",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "16_多维动态规划.ipynb",
+          "start": 4,
+          "end": 7
+        }
+      ],
+      "sort": [
+        15,
+        0,
+        0,
+        62
+      ]
+    },
+    {
+      "id": 64,
+      "title": "最小路径和",
+      "difficulty": "中等",
+      "slug": "minimum-path-sum",
+      "url": "https://leetcode.cn/problems/minimum-path-sum/",
+      "category": "多维动态规划",
+      "subtopic": "网格路径",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "多维动态规划 / 网格路径",
+      "notebook": "16_多维动态规划.ipynb",
+      "anchor": "lc-64",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "注意f[0]的处理:f[0] += grid[i][0],同时内部循环从1开始.使用一维数组便可以解决问题",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "16_多维动态规划.ipynb",
+          "start": 1,
+          "end": 4
+        }
+      ],
+      "sort": [
+        15,
+        0,
+        0,
+        64
+      ]
+    },
+    {
       "id": 1770,
       "title": "执行乘法运算的最大分数",
       "difficulty": "困难",
@@ -3504,6 +3813,40 @@
         4,
         0,
         72
+      ]
+    },
+    {
+      "id": 136,
+      "title": "只出现一次的数字",
+      "difficulty": "简单",
+      "slug": "single-number",
+      "url": "https://leetcode.cn/problems/single-number/",
+      "category": "技巧",
+      "subtopic": "位运算",
+      "scope": "Hot100",
+      "related": [],
+      "reason": "LeetCode Hot100 官方题单收录",
+      "tags": "技巧 / 位运算",
+      "notebook": "17_技巧.ipynb",
+      "anchor": "lc-136",
+      "status": "已有详细笔记",
+      "frequency": null,
+      "practice_status": null,
+      "rounds": null,
+      "notes": "异或思路:python当中的异或操作按位计算",
+      "extra": null,
+      "blocks": [
+        {
+          "file": "17_技巧.ipynb",
+          "start": 1,
+          "end": 3
+        }
+      ],
+      "sort": [
+        16,
+        0,
+        0,
+        136
       ]
     },
     {

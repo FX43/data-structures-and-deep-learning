@@ -22,7 +22,12 @@ if(currentSheet){
     if(!Number.isInteger(row[2]))continue;
     const record=byid.get(row[2]);
     if(!record)throw new Error(`题号${row[2]}尚未登记，停止重建以保留新增记录。`);
-    for(const col of [3,4,5,6,7,8,10,11])record.values[col]=row[col]??null;
+    for(const col of [3,4,5,6,7,8,10,11]){
+      const value=row[col];
+      if(col===8){record.values[col]=value??null;continue;}
+      if(value===null||value===undefined||col===3&&typeof value!=='string')continue;
+      record.values[col]=value;
+    }
   }
 }
 const w=Workbook.create();const s=w.worksheets.add(input.sheet);
@@ -37,7 +42,8 @@ s.getRange('A2').values=[['A列大标签采用Hot100官网分类，B列小标签
 s.getRange('A2:M2').format.rowHeight=46;
 s.getRange('A3:M3').values=[['大标签','小标签',...input.headers.slice(1)]];s.getRange('A3:M3').format=input.header_style;
 s.getRange('A3:M3').format.rowHeight=48;
-s.freezePanes.freezeRows(input.freeze_rows??3);s.freezePanes.freezeColumns(input.freeze_columns??2);
+if((input.freeze_rows??3)>0)s.freezePanes.freezeRows(input.freeze_rows??3);
+if((input.freeze_columns??2)>0)s.freezePanes.freezeColumns(input.freeze_columns??2);
 const links=[];const groupRanges=[];let groupStart=4,previousGroup='';
 const majorRanges=[];let majorStart=4,previousMajor='';
 function textUnits(value){return String(value??'').split('\n').map(line=>[...line].reduce((n,c)=>n+(c.charCodeAt(0)>255?2:1),0));}
@@ -77,7 +83,6 @@ for(const [col,ranges] of [['A',majorRanges],['B',groupRanges]])for(const [start
   if(col==='B')s.getRange(`${col}${start}:${col}${end}`).format.fill='#F2F6FA';
 }
 s.getRange(`J4:J${last}`).dataValidation={
-  allowBlank:true,
   rule:{type:'custom',formula1:'=LEN(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(J4,"√",""),"×",""),"✓",""))=0'},
   prompt:{title:'追加本次结果',message:'双击或F2编辑，在末尾追加√或×。例如√×√表示3次；不要覆盖已有记录。'},
   errorAlert:{style:'stop',title:'只填写做题结果',message:'请只填写√或×（兼容✓）。每个符号代表做了一次，例如√×√。'}
