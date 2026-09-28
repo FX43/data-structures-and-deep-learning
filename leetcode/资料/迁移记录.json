@@ -1,0 +1,1012 @@
+{
+  "backup_commit": "66c2daa",
+  "original_problem_count": 101,
+  "final_problem_count": 103,
+  "preserved_cells": 276,
+  "heading_corrections": [
+    {
+      "file": "矩阵问题.ipynb",
+      "cell_index": 5,
+      "original_id": "3e3a3a7eda6ce82b",
+      "old": "#3.搜索二维矩阵\n\n* 方法一：暴力枚举\n* 方法二：每一行进行二分查找\n* 方法三：从左下角或者右上角开始遍历",
+      "new": "#3.搜索二维矩阵 II\n\n* 方法一：暴力枚举\n* 方法二：每一行进行二分查找\n* 方法三：从左下角或者右上角开始遍历"
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "cell_index": 14,
+      "original_id": "f02e6daa",
+      "old": "**#6.合并两个有序链表**\n\n核心思想:用 dummy 抓头，用 l1 or l2 or add 统一循环，算总和、存进位(//10)、留个位(%10)，补零移动不报错",
+      "new": "**#6.两数相加**\n\n核心思想:用 dummy 抓头，用 l1 or l2 or add 统一循环，算总和、存进位(//10)、留个位(%10)，补零移动不报错"
+    }
+  ],
+  "problem_blocks": [
+    {
+      "file": "链表错题集.ipynb",
+      "start": 0,
+      "end": 4,
+      "problem": 49,
+      "target": "01_哈希.ipynb",
+      "target_start": 2,
+      "target_end": 6
+    },
+    {
+      "file": "哈希表错题集.ipynb",
+      "start": 0,
+      "end": 2,
+      "problem": 128,
+      "target": "01_哈希.ipynb",
+      "target_start": 7,
+      "target_end": 9
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 0,
+      "end": 2,
+      "problem": 283,
+      "target": "02_双指针.ipynb",
+      "target_start": 3,
+      "target_end": 5
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 4,
+      "end": 7,
+      "problem": 283,
+      "target": "02_双指针.ipynb",
+      "target_start": 6,
+      "target_end": 9
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 2,
+      "end": 4,
+      "problem": 15,
+      "target": "02_双指针.ipynb",
+      "target_start": 10,
+      "target_end": 12
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 4,
+      "end": 9,
+      "problem": 42,
+      "target": "02_双指针.ipynb",
+      "target_start": 15,
+      "target_end": 20
+    },
+    {
+      "file": "栈错题集.ipynb",
+      "start": 7,
+      "end": 9,
+      "problem": 42,
+      "target": "02_双指针.ipynb",
+      "target_start": 21,
+      "target_end": 23
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 14,
+      "end": 17,
+      "problem": 3,
+      "target": "03_滑动窗口.ipynb",
+      "target_start": 4,
+      "target_end": 7
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 10,
+      "end": 12,
+      "problem": 209,
+      "target": "03_滑动窗口.ipynb",
+      "target_start": 8,
+      "target_end": 10
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 12,
+      "end": 14,
+      "problem": 713,
+      "target": "03_滑动窗口.ipynb",
+      "target_start": 11,
+      "target_end": 13
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 19,
+      "end": 22,
+      "problem": 438,
+      "target": "03_滑动窗口.ipynb",
+      "target_start": 14,
+      "target_end": 17
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 4,
+      "end": 6,
+      "problem": 560,
+      "target": "04_子串.ipynb",
+      "target_start": 2,
+      "target_end": 4
+    },
+    {
+      "file": "单调队列问题.ipynb",
+      "start": 0,
+      "end": 2,
+      "problem": 239,
+      "target": "04_子串.ipynb",
+      "target_start": 5,
+      "target_end": 7
+    },
+    {
+      "file": "双指针问题.ipynb",
+      "start": 17,
+      "end": 19,
+      "problem": 76,
+      "target": "04_子串.ipynb",
+      "target_start": 8,
+      "target_end": 10
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 0,
+      "end": 2,
+      "problem": 53,
+      "target": "05_普通数组.ipynb",
+      "target_start": 2,
+      "target_end": 4
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 10,
+      "end": 12,
+      "problem": 56,
+      "target": "05_普通数组.ipynb",
+      "target_start": 5,
+      "target_end": 7
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 6,
+      "end": 10,
+      "problem": 189,
+      "target": "05_普通数组.ipynb",
+      "target_start": 8,
+      "target_end": 12
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 2,
+      "end": 4,
+      "problem": 238,
+      "target": "05_普通数组.ipynb",
+      "target_start": 13,
+      "target_end": 15
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 16,
+      "end": 19,
+      "problem": 41,
+      "target": "05_普通数组.ipynb",
+      "target_start": 16,
+      "target_end": 19
+    },
+    {
+      "file": "矩阵问题.ipynb",
+      "start": 7,
+      "end": 9,
+      "problem": 73,
+      "target": "06_矩阵.ipynb",
+      "target_start": 4,
+      "target_end": 6
+    },
+    {
+      "file": "矩阵问题.ipynb",
+      "start": 1,
+      "end": 3,
+      "problem": 54,
+      "target": "06_矩阵.ipynb",
+      "target_start": 7,
+      "target_end": 9
+    },
+    {
+      "file": "矩阵问题.ipynb",
+      "start": 3,
+      "end": 5,
+      "problem": 48,
+      "target": "06_矩阵.ipynb",
+      "target_start": 10,
+      "target_end": 12
+    },
+    {
+      "file": "矩阵问题.ipynb",
+      "start": 5,
+      "end": 7,
+      "problem": 240,
+      "target": "06_矩阵.ipynb",
+      "target_start": 13,
+      "target_end": 15
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 8,
+      "end": 10,
+      "problem": 160,
+      "target": "07_链表.ipynb",
+      "target_start": 2,
+      "target_end": 4
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 7,
+      "end": 8,
+      "problem": 206,
+      "target": "07_链表.ipynb",
+      "target_start": 5,
+      "target_end": 6
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 16,
+      "end": 18,
+      "problem": 234,
+      "target": "07_链表.ipynb",
+      "target_start": 7,
+      "target_end": 9
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 10,
+      "end": 12,
+      "problem": 141,
+      "target": "07_链表.ipynb",
+      "target_start": 10,
+      "target_end": 12
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 12,
+      "end": 14,
+      "problem": 142,
+      "target": "07_链表.ipynb",
+      "target_start": 13,
+      "target_end": 15
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 14,
+      "end": 16,
+      "problem": 2,
+      "target": "07_链表.ipynb",
+      "target_start": 16,
+      "target_end": 18
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 18,
+      "end": 20,
+      "problem": 24,
+      "target": "07_链表.ipynb",
+      "target_start": 20,
+      "target_end": 22
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 24,
+      "end": 26,
+      "problem": 25,
+      "target": "07_链表.ipynb",
+      "target_start": 23,
+      "target_end": 25
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 26,
+      "end": 28,
+      "problem": 138,
+      "target": "07_链表.ipynb",
+      "target_start": 26,
+      "target_end": 28
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 20,
+      "end": 22,
+      "problem": 148,
+      "target": "07_链表.ipynb",
+      "target_start": 29,
+      "target_end": 31
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 22,
+      "end": 24,
+      "problem": 23,
+      "target": "07_链表.ipynb",
+      "target_start": 32,
+      "target_end": 34
+    },
+    {
+      "file": "链表错题集.ipynb",
+      "start": 28,
+      "end": 30,
+      "problem": 146,
+      "target": "07_链表.ipynb",
+      "target_start": 35,
+      "target_end": 37
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 3,
+      "end": 6,
+      "problem": 94,
+      "target": "08_二叉树.ipynb",
+      "target_start": 4,
+      "target_end": 7
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 8,
+      "end": 10,
+      "problem": 104,
+      "target": "08_二叉树.ipynb",
+      "target_start": 8,
+      "target_end": 10
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 10,
+      "end": 12,
+      "problem": 226,
+      "target": "08_二叉树.ipynb",
+      "target_start": 11,
+      "target_end": 13
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 1,
+      "end": 3,
+      "problem": 101,
+      "target": "08_二叉树.ipynb",
+      "target_start": 14,
+      "target_end": 16
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 6,
+      "end": 8,
+      "problem": 543,
+      "target": "08_二叉树.ipynb",
+      "target_start": 17,
+      "target_end": 19
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 69,
+      "end": 75,
+      "problem": 1617,
+      "target": "08_二叉树.ipynb",
+      "target_start": 20,
+      "target_end": 26
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 65,
+      "end": 67,
+      "problem": 2246,
+      "target": "08_二叉树.ipynb",
+      "target_start": 27,
+      "target_end": 29
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 67,
+      "end": 69,
+      "problem": 2538,
+      "target": "08_二叉树.ipynb",
+      "target_start": 30,
+      "target_end": 32
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 12,
+      "end": 14,
+      "problem": 102,
+      "target": "08_二叉树.ipynb",
+      "target_start": 33,
+      "target_end": 35
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 21,
+      "end": 23,
+      "problem": 98,
+      "target": "08_二叉树.ipynb",
+      "target_start": 36,
+      "target_end": 38
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 23,
+      "end": 26,
+      "problem": 114,
+      "target": "08_二叉树.ipynb",
+      "target_start": 39,
+      "target_end": 42
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 14,
+      "end": 21,
+      "problem": 105,
+      "target": "08_二叉树.ipynb",
+      "target_start": 43,
+      "target_end": 50
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 32,
+      "end": 34,
+      "problem": 437,
+      "target": "08_二叉树.ipynb",
+      "target_start": 51,
+      "target_end": 53
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 26,
+      "end": 28,
+      "problem": 236,
+      "target": "08_二叉树.ipynb",
+      "target_start": 54,
+      "target_end": 56
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 28,
+      "end": 30,
+      "problem": 235,
+      "target": "08_二叉树.ipynb",
+      "target_start": 57,
+      "target_end": 59
+    },
+    {
+      "file": "树错题集.ipynb",
+      "start": 30,
+      "end": 32,
+      "problem": 124,
+      "target": "08_二叉树.ipynb",
+      "target_start": 60,
+      "target_end": 62
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 75,
+      "end": 79,
+      "problem": 337,
+      "target": "08_二叉树.ipynb",
+      "target_start": 63,
+      "target_end": 67
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 79,
+      "end": 82,
+      "problem": 968,
+      "target": "08_二叉树.ipynb",
+      "target_start": 68,
+      "target_end": 71
+    },
+    {
+      "file": "图问题.ipynb",
+      "start": 0,
+      "end": 5,
+      "problem": 200,
+      "target": "09_图论.ipynb",
+      "target_start": 2,
+      "target_end": 7
+    },
+    {
+      "file": "图问题.ipynb",
+      "start": 5,
+      "end": 8,
+      "problem": 207,
+      "target": "09_图论.ipynb",
+      "target_start": 8,
+      "target_end": 11
+    },
+    {
+      "file": "图问题.ipynb",
+      "start": 8,
+      "end": 10,
+      "problem": 208,
+      "target": "09_图论.ipynb",
+      "target_start": 12,
+      "target_end": 14
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 1,
+      "end": 5,
+      "problem": 46,
+      "target": "10_回溯.ipynb",
+      "target_start": 5,
+      "target_end": 9
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 11,
+      "end": 16,
+      "problem": 78,
+      "target": "10_回溯.ipynb",
+      "target_start": 10,
+      "target_end": 15
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 9,
+      "end": 11,
+      "problem": 17,
+      "target": "10_回溯.ipynb",
+      "target_start": 16,
+      "target_end": 18
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 18,
+      "end": 20,
+      "problem": 39,
+      "target": "10_回溯.ipynb",
+      "target_start": 19,
+      "target_end": 21
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 22,
+      "end": 24,
+      "problem": 216,
+      "target": "10_回溯.ipynb",
+      "target_start": 22,
+      "target_end": 24
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 20,
+      "end": 22,
+      "problem": 22,
+      "target": "10_回溯.ipynb",
+      "target_start": 25,
+      "target_end": 27
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 16,
+      "end": 18,
+      "problem": 131,
+      "target": "10_回溯.ipynb",
+      "target_start": 28,
+      "target_end": 30
+    },
+    {
+      "file": "回溯问题.ipynb",
+      "start": 5,
+      "end": 8,
+      "problem": 51,
+      "target": "10_回溯.ipynb",
+      "target_start": 31,
+      "target_end": 34
+    },
+    {
+      "file": "二分查找错题集.ipynb",
+      "start": 9,
+      "end": 11,
+      "problem": 34,
+      "target": "11_二分查找.ipynb",
+      "target_start": 9,
+      "target_end": 11
+    },
+    {
+      "file": "二分查找错题集.ipynb",
+      "start": 5,
+      "end": 7,
+      "problem": 33,
+      "target": "11_二分查找.ipynb",
+      "target_start": 12,
+      "target_end": 14
+    },
+    {
+      "file": "二分查找错题集.ipynb",
+      "start": 7,
+      "end": 9,
+      "problem": 153,
+      "target": "11_二分查找.ipynb",
+      "target_start": 15,
+      "target_end": 17
+    },
+    {
+      "file": "二分查找错题集.ipynb",
+      "start": 11,
+      "end": 13,
+      "problem": 162,
+      "target": "11_二分查找.ipynb",
+      "target_start": 18,
+      "target_end": 20
+    },
+    {
+      "file": "二分查找错题集.ipynb",
+      "start": 15,
+      "end": 17,
+      "problem": 4,
+      "target": "11_二分查找.ipynb",
+      "target_start": 21,
+      "target_end": 23
+    },
+    {
+      "file": "栈错题集.ipynb",
+      "start": 2,
+      "end": 4,
+      "problem": 155,
+      "target": "12_栈.ipynb",
+      "target_start": 2,
+      "target_end": 4
+    },
+    {
+      "file": "栈错题集.ipynb",
+      "start": 0,
+      "end": 2,
+      "problem": 394,
+      "target": "12_栈.ipynb",
+      "target_start": 5,
+      "target_end": 7
+    },
+    {
+      "file": "栈错题集.ipynb",
+      "start": 4,
+      "end": 7,
+      "problem": 739,
+      "target": "12_栈.ipynb",
+      "target_start": 8,
+      "target_end": 11
+    },
+    {
+      "file": "栈错题集.ipynb",
+      "start": 9,
+      "end": 11,
+      "problem": 84,
+      "target": "12_栈.ipynb",
+      "target_start": 12,
+      "target_end": 14
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 12,
+      "end": 14,
+      "problem": 215,
+      "target": "13_堆.ipynb",
+      "target_start": 2,
+      "target_end": 4
+    },
+    {
+      "file": "堆错题集.ipynb",
+      "start": 0,
+      "end": 2,
+      "problem": 295,
+      "target": "13_堆.ipynb",
+      "target_start": 5,
+      "target_end": 7
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 34,
+      "end": 37,
+      "problem": 122,
+      "target": "14_贪心算法.ipynb",
+      "target_start": 2,
+      "target_end": 5
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 39,
+      "end": 46,
+      "problem": 188,
+      "target": "14_贪心算法.ipynb",
+      "target_start": 6,
+      "target_end": 13
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 37,
+      "end": 39,
+      "problem": 309,
+      "target": "14_贪心算法.ipynb",
+      "target_start": 14,
+      "target_end": 16
+    },
+    {
+      "file": "贪心算法.ipynb",
+      "start": 0,
+      "end": 6,
+      "problem": 55,
+      "target": "14_贪心算法.ipynb",
+      "target_start": 17,
+      "target_end": 23
+    },
+    {
+      "file": "贪心算法.ipynb",
+      "start": 6,
+      "end": 10,
+      "problem": 45,
+      "target": "14_贪心算法.ipynb",
+      "target_start": 24,
+      "target_end": 28
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 61,
+      "end": 63,
+      "problem": 2266,
+      "target": "15_动态规划.ipynb",
+      "target_start": 5,
+      "target_end": 7
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 2,
+      "end": 4,
+      "problem": 198,
+      "target": "15_动态规划.ipynb",
+      "target_start": 8,
+      "target_end": 10
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 12,
+      "end": 17,
+      "problem": 322,
+      "target": "15_动态规划.ipynb",
+      "target_start": 11,
+      "target_end": 16
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 6,
+      "end": 12,
+      "problem": 494,
+      "target": "15_动态规划.ipynb",
+      "target_start": 17,
+      "target_end": 23
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 56,
+      "end": 58,
+      "problem": 139,
+      "target": "15_动态规划.ipynb",
+      "target_start": 24,
+      "target_end": 26
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 26,
+      "end": 31,
+      "problem": 300,
+      "target": "15_动态规划.ipynb",
+      "target_start": 27,
+      "target_end": 32
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 58,
+      "end": 61,
+      "problem": 1187,
+      "target": "15_动态规划.ipynb",
+      "target_start": 33,
+      "target_end": 36
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 33,
+      "end": 34,
+      "problem": 1671,
+      "target": "15_动态规划.ipynb",
+      "target_start": 37,
+      "target_end": 38
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 31,
+      "end": 33,
+      "problem": 1964,
+      "target": "15_动态规划.ipynb",
+      "target_start": 39,
+      "target_end": 41
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 4,
+      "end": 6,
+      "problem": 152,
+      "target": "15_动态规划.ipynb",
+      "target_start": 42,
+      "target_end": 44
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 54,
+      "end": 56,
+      "problem": 32,
+      "target": "15_动态规划.ipynb",
+      "target_start": 45,
+      "target_end": 47
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 63,
+      "end": 65,
+      "problem": 1770,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 2,
+      "target_end": 4
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 52,
+      "end": 54,
+      "problem": 5,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 5,
+      "target_end": 7
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 46,
+      "end": 48,
+      "problem": 516,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 8,
+      "target_end": 10
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 50,
+      "end": 52,
+      "problem": 647,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 11,
+      "target_end": 13
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 48,
+      "end": 50,
+      "problem": 1039,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 14,
+      "target_end": 16
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 17,
+      "end": 22,
+      "problem": 1143,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 17,
+      "target_end": 22
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 22,
+      "end": 23,
+      "problem": 712,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 23,
+      "target_end": 24
+    },
+    {
+      "file": "动态规划问题.ipynb",
+      "start": 23,
+      "end": 26,
+      "problem": 72,
+      "target": "16_多维动态规划.ipynb",
+      "target_start": 25,
+      "target_end": 28
+    },
+    {
+      "file": "二分查找错题集.ipynb",
+      "start": 13,
+      "end": 15,
+      "problem": 75,
+      "target": "17_技巧.ipynb",
+      "target_start": 2,
+      "target_end": 4
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 19,
+      "end": 21,
+      "problem": 31,
+      "target": "17_技巧.ipynb",
+      "target_start": 5,
+      "target_end": 7
+    },
+    {
+      "file": "数组错题集.ipynb",
+      "start": 14,
+      "end": 16,
+      "problem": 287,
+      "target": "17_技巧.ipynb",
+      "target_start": 8,
+      "target_end": 10
+    }
+  ],
+  "guide_blocks": {
+    "滑动窗口": [
+      {
+        "file": "双指针问题.ipynb",
+        "start": 9,
+        "end": 10
+      }
+    ],
+    "二分查找": [
+      {
+        "file": "二分查找错题集.ipynb",
+        "start": 0,
+        "end": 5
+      }
+    ],
+    "动态规划": [
+      {
+        "file": "动态规划问题.ipynb",
+        "start": 0,
+        "end": 2
+      }
+    ],
+    "回溯": [
+      {
+        "file": "回溯问题.ipynb",
+        "start": 0,
+        "end": 1
+      },
+      {
+        "file": "回溯问题.ipynb",
+        "start": 8,
+        "end": 9
+      }
+    ],
+    "二叉树": [
+      {
+        "file": "树错题集.ipynb",
+        "start": 0,
+        "end": 1
+      }
+    ],
+    "矩阵": [
+      {
+        "file": "矩阵问题.ipynb",
+        "start": 0,
+        "end": 1
+      }
+    ],
+    "哈希": [],
+    "双指针": [],
+    "子串": [],
+    "普通数组": [],
+    "链表": [],
+    "图论": [],
+    "栈": [],
+    "堆": [],
+    "贪心算法": [],
+    "多维动态规划": [],
+    "技巧": []
+  },
+  "attachment_repairs": [
+    {
+      "target": "14_贪心算法.ipynb",
+      "original_file": "动态规划问题.ipynb",
+      "target_original_cell": 40,
+      "source_original_cell": 39,
+      "attachment": "968ca632-406b-453e-b49d-7683481af062.png",
+      "reason": "引用的原图保存在另一单元格；复制原始图片数据到引用位置，保证拆分后可显示。"
+    }
+  ]
+}
